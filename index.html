@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b34">
+  <meta name="description" content="Official WiFiCamera Android app download page. Download the latest WiFiCamera APK for your compatible Wi-Fi camera.">
+  <title>WiFiCamera — Android App Download</title>
+  <style>
+    /* 页面主题：保持独立静态文件，不依赖第三方 CSS 或脚本 */
+    :root { --ink:#122340; --muted:#64748b; --blue:#2459ef; --blue2:#4079ff; --line:#e2e8f2; --soft:#f5f8fd; --white:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:linear-gradient(180deg,#f6faff 0%,#ffffff 54%); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1072px,calc(100% - 40px)); margin:0 auto; }
+    .top { display:flex; align-items:center; justify-content:space-between; padding:27px 0; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:780; font-size:19px; letter-spacing:-.5px; }
+    .mark { display:grid; place-items:center; width:43px; height:43px; background:#17284b; border-radius:13px; color:white; box-shadow:0 7px 16px #14264a21; }
+    .mark svg { width:28px; height:28px; }
+    .toplink { font-size:13px; font-weight:650; color:#536884; border:1px solid #dce5f1; border-radius:999px; padding:10px 17px; background:#ffffffbf; }
+    .toplink:hover { border-color:#9db8ee; color:var(--blue); }
+    .hero { display:grid; grid-template-columns:minmax(0,1fr) 335px; align-items:center; gap:56px; min-height:465px; padding:52px 0 55px; }
+    .eyebrow { display:inline-flex; align-items:center; gap:8px; padding:9px 13px; background:#e9f0ff; color:#2457bb; border-radius:999px; font-size:12px; font-weight:760; letter-spacing:.3px; }
+    .dot { width:7px; height:7px; border-radius:50%; background:#2e74fa; }
+    h1 { margin:24px 0 18px; font-size:clamp(42px,6vw,67px); letter-spacing:-2.8px; line-height:1.08; font-weight:830; }
+    h1 span { color:var(--blue); }
+    .lead { max-width:555px; margin:0 0 27px; color:#64748b; line-height:1.8; font-size:16px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .primary { display:inline-flex; justify-content:center; align-items:center; gap:11px; padding:17px 24px; border-radius:14px; background:linear-gradient(110deg,var(--blue),var(--blue2)); color:white; box-shadow:0 12px 25px #2459ef38; font-weight:750; font-size:15px; }
+    .primary:hover { filter:brightness(1.055); transform:translateY(-1px); }
+    .primary svg { width:20px; height:20px; }
+    .secondary { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 19px; border:1px solid #d8e1ed; border-radius:14px; background:white; font-size:14px; font-weight:700; color:#465b76; }
+    .secondary:hover { border-color:#9bb5e9; }
+    .details { display:flex; flex-wrap:wrap; gap:10px 21px; margin-top:22px; color:#718096; font-size:12px; }
+    .details b { color:#304765; font-weight:650; }
+    .device { position:relative; margin:auto; width:306px; height:370px; }
+    .orb { position:absolute; inset:8px -10px 20px; border-radius:40%; background:radial-gradient(circle at 50% 45%,#cfdeff 0%,#eaf2ff 57%,transparent 72%); }
+    .phone { position:absolute; left:45px; top:4px; width:217px; height:350px; padding:10px; border-radius:36px; background:#101b31; transform:rotate(5deg); box-shadow:0 28px 55px #19365936; }
+    .screen { overflow:hidden; position:relative; height:100%; border-radius:26px; background:linear-gradient(160deg,#a8d1fb 0%,#d6e8f9 43%,#7daaa3 44%,#557f69 100%); }
+    .camtop { position:absolute; top:12px; left:76px; width:45px; height:11px; background:#101b31; border-radius:20px; }
+    .sky { position:absolute; top:55px; left:0; width:100%; text-align:center; color:#264d70; font-size:11px; font-weight:760; letter-spacing:1.5px; }
+    .mount { position:absolute; left:-20%; top:43%; width:140%; height:90px; transform:rotate(-8deg); background:#87acaa; border-radius:40% 70% 0 0; }
+    .mount2 { position:absolute; left:-20%; top:62%; width:140%; height:150px; transform:rotate(6deg); background:#528675; border-radius:30% 70% 0 0; }
+    .bird { position:absolute; top:125px; left:79px; font-size:53px; filter:drop-shadow(0 8px 7px #213a3e36); }
+    .focus { position:absolute; top:140px; left:47px; width:115px; height:93px; border:2px solid #ffffffbc; border-radius:16px; }
+    .ctrl { position:absolute; bottom:22px; left:50%; width:52px; height:52px; transform:translateX(-50%); border:5px solid #fff; background:#ffffff99; border-radius:50%; box-shadow:0 1px 4px #0003; }
+    .floating { position:absolute; right:-13px; bottom:64px; padding:13px 17px; background:#fff; border:1px solid #e8edf6; border-radius:16px; box-shadow:0 16px 35px #1c3c7630; font-size:11px; font-weight:780; transform:rotate(-4deg); }
+    .floating small { display:block; color:#6c8099; margin-top:5px; font-weight:500; font-size:10px; }
+    .divider { height:1px; background:var(--line); }
+    section { padding:43px 0; }
+    .section-head { font-size:26px; letter-spacing:-.9px; margin:0 0 9px; }
+    .section-desc { color:var(--muted); font-size:14px; line-height:1.65; margin:0 0 25px; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+    .card { padding:25px; border:1px solid var(--line); background:#fff; border-radius:19px; }
+    .ico { width:43px; height:43px; display:grid; place-items:center; border-radius:12px; color:#285ee0; background:#edf3ff; font-size:22px; margin-bottom:16px; }
+    .card h3 { margin:0 0 7px; font-size:15px; }
+    .card p { margin:0; color:var(--muted); font-size:13px; line-height:1.72; }
+    .install { background:var(--soft); border-top:1px solid #eaf0f8; border-bottom:1px solid #eaf0f8; }
+    .steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:23px; }
+    .step { display:flex; align-items:flex-start; gap:14px; }
+    .number { flex:0 0 34px; height:34px; border-radius:11px; background:#e0eafe; color:#275fe3; display:grid; place-items:center; font-weight:750; font-size:13px; }
+    .step h3 { margin:2px 0 7px; font-size:14px; }
+    .step p { margin:0; color:var(--muted); line-height:1.65; font-size:12px; }
+    .bottom { display:grid; grid-template-columns:1fr 185px; gap:30px; align-items:center; padding:45px 0; }
+    .bottom h2 { margin:0 0 10px; font-size:25px; letter-spacing:-.8px; }
+    .bottom p { margin:0 0 15px; max-width:640px; color:var(--muted); line-height:1.75; font-size:13px; }
+    .qrbox { justify-self:end; text-align:center; border:1px solid var(--line); background:white; border-radius:17px; padding:12px; }
+    .qrbox img { width:125px; height:125px; display:block; }
+    .qrbox span { display:block; margin-top:7px; color:#6b7a92; font-size:11px; }
+    footer { border-top:1px solid var(--line); padding:22px 0 35px; color:#75849a; font-size:12px; }
+    .footrow { display:flex; align-items:center; justify-content:space-between; gap:15px; flex-wrap:wrap; }
+    .footrow a { color:#4967a7; }
+    @media(max-width:760px) { .wrap{width:min(100% - 32px,540px)} .top{padding:19px 0} .hero{display:flex; flex-direction:column; gap:17px; padding:36px 0 40px; align-items:stretch} h1{font-size:47px;letter-spacing:-2px} .lead{font-size:15px} .device{height:265px; margin-top:8px; transform:scale(.76);transform-origin:top center;margin-bottom:-70px} .cards,.steps{grid-template-columns:1fr} .card{padding:21px}.bottom{grid-template-columns:1fr;gap:18px}.qrbox{justify-self:start} .section-head{font-size:23px} .primary{width:100%} .secondary{width:100%} }
+    @media(prefers-reduced-motion:reduce) {.primary:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./" aria-label="WiFiCamera home"><span class="mark"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><rect x="5" y="12" width="22" height="15" rx="4"/><circle cx="16" cy="19.5" r="4.3"/><path d="M11 8Q16 3 21 8M7 5Q16-3 25 5"/></svg></span><span>WiFiCamera</span></a>
+      <a class="toplink" href="https://github.com/XMSECODE/wificamera-download/releases/latest" target="_blank" rel="noopener noreferrer">Release history ↗</a>
+    </header>
+    <main>
+      <div class="hero">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> OFFICIAL ANDROID DOWNLOAD</div>
+          <h1>Your camera.<br><span>One app.</span></h1>
+          <p class="lead">Download WiFiCamera for Android to connect to your compatible Wi-Fi camera, view live video, manage captured media, and explore bird recognition features.</p>
+          <div class="actions">
+            <a class="primary" id="downloadLink" href="https://github.com/XMSECODE/wificamera-download/releases/latest/download/wificamera.apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3"/></svg>Download for Android</a>
+            <a class="secondary" href="https://github.com/XMSECODE/wificamera-download/releases/latest" target="_blank" rel="noopener noreferrer">View release notes ↗</a>
+          </div>
+          <div class="details"><span>✓ Direct APK download</span><span>✓ No account required</span><span id="releaseInfo">Latest release</span></div>
+        </div>
+        <div class="device" aria-hidden="true">
+          <div class="orb"></div>
+          <div class="phone"><div class="screen"><div class="camtop"></div><div class="sky">LIVE VIEW</div><div class="mount"></div><div class="mount2"></div><div class="focus"></div><span class="bird">🐦</span><div class="ctrl"></div></div></div>
+          <div class="floating">● LIVE CONNECTION<small>Compatible Wi-Fi cameras</small></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="divider"></div>
+  <section class="wrap" aria-label="Features">
+    <h2 class="section-head">Everything in one place.</h2>
+    <p class="section-desc">Useful tools for your compatible camera.</p>
+    <div class="cards">
+      <div class="card"><span class="ico">◉</span><h3>Live Camera Preview</h3><p>Connect to your camera's Wi-Fi network and view its live feed from your Android device.</p></div>
+      <div class="card"><span class="ico">▣</span><h3>Photos &amp; Videos</h3><p>Access camera media and keep your favorite captured moments close at hand.</p></div>
+      <div class="card"><span class="ico">✦</span><h3>Bird Recognition</h3><p>Use supported bird identification features while viewing compatible camera footage.</p></div>
+    </div>
+  </section>
+  <section class="install" aria-label="Installation guide">
+    <div class="wrap">
+      <h2 class="section-head">Install in three steps.</h2>
+      <p class="section-desc">WiFiCamera is currently distributed directly as an Android APK.</p>
+      <div class="steps">
+        <div class="step"><span class="number">01</span><div><h3>Download the APK</h3><p>Tap the Download button above and wait for the file to finish downloading.</p></div></div>
+        <div class="step"><span class="number">02</span><div><h3>Open the downloaded file</h3><p>Find the APK in Downloads and tap it. Android may ask you to allow installs from this source.</p></div></div>
+        <div class="step"><span class="number">03</span><div><h3>Install &amp; connect</h3><p>Approve the Android installation prompt, open WiFiCamera, then connect to your camera's Wi-Fi.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <div class="wrap bottom">
+    <div><h2>Download with confidence.</h2><p>The APK is hosted in this project's public GitHub Releases. You can always review the latest release and download the newest published version from this page.</p><p>Android's standard security prompts may appear for APK installation. This website does not bypass device security checks.</p><a class="secondary" href="https://github.com/XMSECODE/wificamera-download/releases/latest" target="_blank" rel="noopener noreferrer">Check latest release ↗</a></div>
+    <div class="qrbox"><img src="wificamera-download-qr.png" alt="QR code for WiFiCamera download page" width="125" height="125"><span>Scan to visit this page</span></div>
+  </div>
+  <footer><div class="wrap footrow"><span>© WiFiCamera · Android download</span><span>APK delivered via <a href="https://github.com/XMSECODE/wificamera-download/releases/latest" target="_blank" rel="noopener noreferrer">GitHub Releases</a></span></div></footer>
+  <script>
+    // 官方发行仓库地址：每次发布最新正式版本时，不需要修改下载按钮。
+    var latestReleaseApi = "https://api.github.com/repos/XMSECODE/wificamera-download/releases/latest";
+
+    // 尝试读取最新发行标签与附件大小；网络失败时仍保持下载按钮可用。
+    async function loadLatestReleaseInfo() {
+      var label = document.getElementById("releaseInfo");
+      try {
+        var response = await fetch(latestReleaseApi, { headers: { "Accept": "application/vnd.github+json" } });
+        if (!response.ok) { return; }
+        var release = await response.json();
+        var asset = null;
+        if (Array.isArray(release.assets)) {
+          for (var i = 0; i < release.assets.length; i++) {
+            if (release.assets[i].name === "wificamera.apk") {
+              asset = release.assets[i];
+              break;
+            }
+          }
+        }
+        if (asset) {
+          var sizeMB = (asset.size / 1024 / 1024).toFixed(0);
+          label.textContent = "Build " + (release.tag_name || "latest") + " · " + sizeMB + " MB";
+        } else if (release.tag_name) {
+          label.textContent = "Release " + release.tag_name;
+        }
+      } catch (error) {
+        // 网络不可用时只保留“Latest release”，无需阻止用户下载。
+      }
+    }
+    loadLatestReleaseInfo();
+  </script>
+</body>
+</html>
